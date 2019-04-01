@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet" href="//stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link href="//fonts.googleapis.com/css?family=Inconsolata:400,700|Poppins:300,400,700" rel="stylesheet" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/github-markdown-css/3.0.1/github-markdown.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <title>Jekyll Post Generator</title>
+  </head>
+  <body class="d-flex flex-column position-relative">
+    <a href="//github.com/anasrar/Jekyll-Post-Generator" title="Fork me on GitHub" class="position-fixed top-0 left-0 ribbon"><img width="149" height="149" src="//github.blog/wp-content/uploads/2008/12/forkme_left_darkblue_121621.png?resize=149%2C149" alt="Fork me on GitHub" /></a>
+    <section id="toast" class="toast position-fixed top-3 right-3" role="alert" aria-live="assertive" aria-atomic="true">
+        <section class="toast-header">
+            <svg class="rounded mr-2 text-success" width="20" height="20" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="currentColor"></rect></svg>
+            <strong class="mr-auto">Editor</strong>
+            <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                <span aria-hidden="true">×</span>
+            </button>
+        </section>
+        <section class="toast-body">
+            Save Post Successful
+        </section>
+    </section>
+    <main class="container py-3 mb-2">
+        <header class="text-center">
+            <h1>Jekyll Post Generator</h1>
+            <p>easy way to make jekyll post</p>
+        </header>
+        <section class="row">
+            <section class="col-12">
+                <h3><button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#frontMatter" aria-expanded="true" aria-controls="frontMatter">&dArr;</button> Front Matter</h3>
+                <section class="row collapse show mb-2" id="frontMatter">
+                    <section class="col-12 col-md-6 mb-0 mb-md-2">
+                        <section class="mb-2">
+                            <label for="title">Title</label>
+                            <input type="text" class="form-control" id="title" placeholder="" />
+                        </section>
+                        <section class="mb-2">
+                            <label for="desc">Description</label>
+                            <input type="text" class="form-control" id="desc" placeholder="" />
+                        </section>
+                        <section class="mb-2">
+                            <label for="date">Date</label>
+                            <input type="datetime-local" class="form-control" id="date" placeholder="" />
+                        </section>
+                    </section>
+                    <section class="col-12 col-md-6 mb-0 mb-md-2">
+                        <section class="mb-2">
+                            <label for="image">Image</label>
+                            <input type="url" class="form-control" id="image" placeholder="URL" />
+                        </section>
+                        <section class="mb-2">
+                            <label for="categories">Categories</label>
+                            <input type="text" class="form-control" id="categories" placeholder="eg: cat1, cat2, etc" />
+                        </section>
+                        <section class="mb-2">
+                            <label for="tags">Tags</label>
+                            <input type="text" class="form-control" id="tags" placeholder="eg: tag1, tag2, etc" />
+                        </section>
+                    </section>
+                </section>
+            </section>
+        </section>
+    </main>
+    <main class="container-fluid pb-3">
+        <section class="row mb-3">
+            <section class="col-12 col-md-6">
+                <h3><label for="preview">Preview</label></h3>
+                <section id="preview" class="border p-3 rounded markdown-body"></section>
+            </section>
+            <section class="col-12 col-md-6">
+                <h3><label for="editor">Editor</label></h3>
+                <textarea class="form-control" id="editor" rows="17"></textarea>
+            </section>
+        </section>
+        <section class="text-center">
+            <button class="btn btn-warning" id="save">Save</button>
+            <a class="btn btn-primary" id="download" href="#">Download</a>
+            <p class="mt-3 mb-3 small">Save Use <a href="//developer.mozilla.org/en-US/docs/Web/API/Window/localStorage" title="localStorage">localStorage</a></p>
+        </section>
+        <section class="text-center">
+            <h5>Built With</h5>
+            <nav>
+                <ul class="list-inline small">
+                    <li class="list-inline-item"><a href="//getbootstrap.com" title="Bootstrap">Bootstrap</a></li>
+                    <li class="list-inline-item"><a href="//github.com/sindresorhus/github-markdown-css" title="github-markdown-css">github-markdown-css</a></li>
+                    <li class="list-inline-item"><a href="//github.com/markdown-it/markdown-it" title="markdown-it">markdown-it</a></li>
+                </ul>
+            </nav>
+        </section>
+    </main>
+
+    <script src="//code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="//stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/markdown-it/8.4.2/markdown-it.min.js"></script>
+    <script src="./assets/js/app.min.js"></script>
+  </body>
+</html>
